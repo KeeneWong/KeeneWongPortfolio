@@ -1,0 +1,115 @@
+*{
+    color: whitesmoke;
+    font-family: 'Squada One', cursive;
+}
+
+body{
+    background-color: rgb(18, 18, 32);
+    justify-content: center;
+    height: 700px;;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    background-color: rgba(48, 48, 48, 0.274);
+}
+nav{
+    justify-content: center;
+    align-items: center;
+}
+main{
+    align-items: center;
+    justify-content: center;
+}
+main h2{
+    margin: 5px auto;
+}
+main h3{
+    border: 1px solid rgba(255, 255, 255, 0.315);
+    padding: 4px;
+}
+main p{
+    text-align: center;
+}
+
+
+
+.navitem{
+    margin: 0 40px;
+    font-size: 20px; 
+    border-radius: 5px;
+    padding: 5px;
+}
+.sign{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+}
+.KeeneWong{
+    border: 2px solid rgba(255, 255, 255, 0.445);
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 70px;
+    margin: 10px auto;
+}
+.flexrow{
+    display: flex;
+    flex-direction: row;
+}
+.flexcolumn{
+    display: flex;
+    flex-direction: column;
+}
+.test{
+    border: 4px solid rgba(228, 228, 132, 0.397);
+}
+.navitem:hover{
+    background-color: rgba(245, 245, 245, 0.26);
+}
+main h3:hover{
+    background-color: rgba(245, 245, 245, 0.26);
+}
+
+
+
+
+
+
+
+/* project page------------------------------------------------------------------------------------ */
+
+.projectmain{
+    height: 80vh;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.projectsdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projectsdiv h3{
+    margin: 4px auto;
+}
+.projectsdiv p{
+    margin: 0 auto;
+    text-align: center;
+}
+.projectpng{
+    width: 300px;
+    height: 175px;
+    border: 2px solid rgba(255, 255, 255, 0.363);
+    border-radius: 5px;
+}
+/* .projectsdiv1{
+    grid-column: 1 / span 1;
+    grid-row: 1 /span 1;
+} */
