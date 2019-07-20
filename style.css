@@ -13,7 +13,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 70px;
     justify-content: center;
     background-color: rgba(190, 190, 190, 0.178);
@@ -27,7 +27,7 @@ main{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 99vw;
+    width: 100%;
 }
 main h2{
     margin: 5px auto;
@@ -58,7 +58,8 @@ p{
     position: fixed;
     left: 0;
     top: 0;
-    width: 250px;
+    width: 120px;
+    margin: 43px 60px;
 }
 .KeeneWong{
     border: 2px solid rgba(255, 255, 255, 0.445);
@@ -94,8 +95,8 @@ main h3:hover{
 /* project page------------------------------------------------------------------------------------ */
 
 .projectmain{
-    height: 92vh;
-    width: 99vw;
+    height: 90vh;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
