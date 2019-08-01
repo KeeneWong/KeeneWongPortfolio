@@ -1,179 +1,246 @@
 <!DOCTYPE html>
-<html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    </head>
-    <body class="flexcolumn">
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body class="flexcolumn">
+    <header class="flexrow">
+      <nav class="flexrow">
+        <img class="sign" src="./img/sign.png" />
+        <a class="navitem" data-scroll="main">Main</a>
+        <a class="navitem" data-scroll="scrollprojectmain">Projct</a>
+        <a class="navitem" data-scroll="resumemain">Resume</a>
+        <a class="navitem" href="./contact.html">Contact</a>
+      </nav>
+    </header>
 
-        <header class="flexrow">
-                <nav class="flexrow">
-                        <img class="sign" src="./img/sign.png">
-                        <a class="navitem" data-scroll="main">Main</a>
-                        <a class="navitem" data-scroll="scrollprojectmain">Projct</a>
-                        <a class="navitem" data-scroll="resumemain">Resume</a>
-                        <a class="navitem" href="./contact.html">Contact</a>
-                </nav>
-        </header>
+    <main class="flexcolumn main">
+      <h2>Hello My Name Is</h2>
+      <h1 class="KeeneWong">Keene Wong</h1>
+      <p>
+        Creative software engineer with a degree in computer science<br />
+        Enjoy group working environment and able to work individually<br />
+        A fan of learning new tech stuff and positive, critical and logical
+        thinking
+      </p>
+    </main>
 
-        <main class="flexcolumn main">
-            <h2>Hello My Name Is</h2>
-            <h1 class="KeeneWong">Keene Wong</h1>
-            <p>Creative software engineer with a degree in computer science<br>
-                    Enjoy group working environment and able to work individually<br>
-                    A fan of learning new tech stuff and positive, critical and logical thinking
-            </p>
-            
+    <div class="areaforheader scrollprojectmain"></div>
+    <div class="projectmain">
+      <div class="projectsdiv1">
+        <h1 class="myproject">My Project</h1>
+        <p>
+          These are the projects that i created <br />
+          while i study at college and GA
+        </p>
+      </div>
 
+      <div class="projectsdiv projectdiv2" data-expand="projectdiv2Expand">
+        <img src="./img/cookingpapa.png" class="projectpng" />
+        <h3>CookingPaPa</h3>
+        <p>a simply game with logic of hangman</p>
+      </div>
 
+      <div class="projectsdiv projectdiv3" data-expand="projectdiv3Expand">
+        <img src="./img/tictactoe.png" class="projectpng" />
+        <h3>CookingPaPa</h3>
+        <p>a simply game with logic of hangman</p>
+      </div>
+      <div
+        class="projectsdiv projectdiv4"
+        data-expand="projectdiv4Expand"
+      ></div>
+      <div
+        class="projectsdiv projectdiv5"
+        data-expand="projectdiv5Expand"
+      ></div>
+      <div
+        class="projectsdiv projectdiv6"
+        data-expand="projectdiv6Expand"
+      ></div>
+    </div>
 
+    <div class="areaforheader scrollprojectdivExpand hidden"></div>
 
-        </main>
+    <div class="projectdivExpand projectdiv2Expand flexrow hidden">
+      <div class="insideprojectdiv insideprojectdiv2Expandleft flexcolumn">
+        <img src="./img/cookingpapa.png" class="projectpng" alt="" />
+      </div>
 
+      <div class="insideprojectdiv insideprojectdiv2Expandright flexcolumn">
+        <h2>CookingPaPa</h2>
+        <p>
+          My GitHub Repo:
+          <a href="https://github.com/KeeneWong/cookingpapa"
+            >https://github.com/KeeneWong/cookingpapa</a
+          >
+          <br /><br />
+          Description https://keenewong.github.io/cookingpapa/ <br />
 
-        <div class="areaforheader scrollprojectmain"></div>
-        <div class="projectmain">
-            <div class="projectsdiv1">
-                <h1 class="myproject">My Project</h1>
-                <p>These are the projects that i created <br> while i study at college and GA</p>
-            </div>
+          My name is cookingpapa. :) <br />
 
-            <div class="projectsdiv projectdiv2" data-expand="projectdiv2Expand">
-                <img src="./img/cookingpapa.png" class="projectpng">
-                <h3>CookingPaPa</h3>
-                <p>a simply game with logic of hangman</p>
-            </div>
+          Its a Game of papa cooking food to his son. (By typing the correct
+          word) <br />
 
-            <div class="projectsdiv projectdiv3" data-expand="projectdiv3Expand">
-                <img src="./img/tictactoe.png" class="projectpng">
-                <h3>CookingPaPa</h3>
-                <p>a simply game with logic of hangman</p>
-            </div>
-            <div class="projectsdiv projectdiv4" data-expand="projectdiv4Expand"></div>
-            <div class="projectsdiv projectdiv5" data-expand="projectdiv5Expand"></div>
-            <div class="projectsdiv projectdiv6" data-expand="projectdiv6Expand"></div>
+          It's like a branch of hangman. <br />
+
+          Auctually the logic is the same. <br />
+
+          Just follow the interface and CLICK to play!!! <br />
+          <br />
+
+          Problem: <br /><br />
+
+          -sometimes css layer was messy when the number div are keep
+          increasing. <br />
+
+          -replace the multiple __ with the letter when plauyer got the right
+          word. <br />
+
+          -get the sound effect. <br />
+
+          -deploy the website <br />
+
+          -acess the object and array of food database <br />
+        </p>
+        <button class="backtoprojectdiv">Back</button>
+      </div>
+    </div>
+
+    <div class="projectdivExpand projectdiv3Expand flexrow hidden">
+      <div class="insideprojectdiv insideprojectdiv2Expandleft flexcolumn">
+        <img src="./img/tictactoe.png" class="projectpng" alt="" />
+      </div>
+
+      <div class="insideprojectdiv insideprojectdiv2Expandright flexcolumn">
+        <h2>CookingPaPa</h2>
+        <p>
+          My GitHub Repo:
+          <a href="https://github.com/KeeneWong/cookingpapa"
+            >https://github.com/KeeneWong/cookingpapa</a
+          >
+          <br /><br />
+          Description https://keenewong.github.io/cookingpapa/ <br />
+
+          My name is cookingpapa. :) <br />
+
+          Its a Game of papa cooking food to his son. (By typing the correct
+          word) <br />
+
+          It's like a branch of hangman. <br />
+
+          Auctually the logic is the same. <br />
+
+          Just follow the interface and CLICK to play!!! <br />
+          <br />
+
+          Problem: <br /><br />
+
+          -sometimes css layer was messy when the number div are keep
+          increasing. <br />
+
+          -replace the multiple __ with the letter when plauyer got the right
+          word. <br />
+
+          -get the sound effect. <br />
+
+          -deploy the website <br />
+
+          -acess the object and array of food database <br />
+        </p>
+        <button class="backtoprojectdiv">Back</button>
+      </div>
+    </div>
+
+    <div class="areaforheader scrollresumemain"></div>
+    <div class="resumemain flexrow">
+      <div class="insideresume insideresumeleft flexcolumn">
+        <div class="selfintro ">
+          <h1 class="black" style="font-size: 45px">Keene Wong</h1>
+          <h3 class="black">Full Stack Developer</h3>
+
+          <h2 class="black under">
+            Skills & Abilities
+          </h2>
+          <li class="black">- Logical and positive thinking</li>
+          <li class="black">- Finds joy in assisting others</li>
+          <li class="black">- Knowledgeable in conversational</li>
+          <li class="black">- English, Chinese and Cantonese</li>
         </div>
 
+        <div class="skillarea">
+          <h3 class="black under">Software Development Skill</h3>
 
-        <div class="areaforheader scrollprojectdivExpand hidden"></div>
+          <li>
+            <h3>JavaScript</h3>
+            <span class="bar"><span class="bar1"></span></span>
+          </li>
 
-        <div class="projectdivExpand projectdiv2Expand flexrow hidden">
-            <div class="insideprojectdiv insideprojectdiv2Expandleft flexcolumn">
-                <img src="./img/cookingpapa.png" class="projectpng" alt="">
-            </div>
+          <li>
+            <h3>HTML5 & CSS</h3>
+            <span class="bar"><span class="bar2"></span></span>
+          </li>
 
-            <div class="insideprojectdiv insideprojectdiv2Expandright flexcolumn">
-                <h2>CookingPaPa</h2>
-                <p>My GitHub Repo: <a href="https://github.com/KeeneWong/cookingpapa">https://github.com/KeeneWong/cookingpapa</a> <br><br>
-                    Description
+          <li>
+            <h3>C#</h3>
+            <span class="bar"><span class="bar3"></span></span>
+          </li>
 
-                    https://keenewong.github.io/cookingpapa/ <br>
-                    
-                    My name is cookingpapa. :) <br>
-                    
-                    Its a Game of papa cooking food to his son. (By typing the correct word) <br>
-                    
-                    It's like a branch of hangman. <br>
-                    
-                    Auctually the logic is the same. <br>
-                    
-                    Just follow the interface and CLICK to play!!! <br> <br>
-                    
-                    Problem: <br><br>
-                    
-                    -sometimes css layer was messy when the number div are keep increasing. <br>
-                    
-                    -replace the multiple __ with the letter when plauyer got the right word. <br>
-                    
-                    -get the sound effect. <br>
-                    
-                    -deploy the website <br>
-                    
-                    -acess the object and array of food database <br>
-                    
-                    </p>
-                <button class="backtoprojectdiv">Back</button>
-            </div>
-
+          <li>
+            <h3>Node JS</h3>
+            <span class="bar"><span class="bar4"></span></span>
+          </li>
         </div>
+      </div>
 
-        <div class="projectdivExpand projectdiv3Expand flexrow hidden">
-            <div class="insideprojectdiv insideprojectdiv2Expandleft flexcolumn">
-                <img src="./img/tictactoe.png" class="projectpng" alt="">
-            </div>
+      <div class="insideresume insideresumeright flexcolumn">
+        <div class="workingExperience">
+          <h2 class="black under top0">Working Experience</h2>
 
-            <div class="insideprojectdiv insideprojectdiv2Expandright flexcolumn">
-                <h2>CookingPaPa</h2>
-                <p>My GitHub Repo: <a href="https://github.com/KeeneWong/cookingpapa">https://github.com/KeeneWong/cookingpapa</a> <br><br>
-                    Description
+          <h3 class="black">
+            Speedy Group Corporation Ltd.<br />(2018-Present)
+          </h3>
+          <li class="black">- Handle server problem</li>
+          <li class="black">- Build and update website</li>
+          <li class="black">- Maintain and support service</li>
 
-                    https://keenewong.github.io/cookingpapa/ <br>
-                    
-                    My name is cookingpapa. :) <br>
-                    
-                    Its a Game of papa cooking food to his son. (By typing the correct word) <br>
-                    
-                    It's like a branch of hangman. <br>
-                    
-                    Auctually the logic is the same. <br>
-                    
-                    Just follow the interface and CLICK to play!!! <br> <br>
-                    
-                    Problem: <br><br>
-                    
-                    -sometimes css layer was messy when the number div are keep increasing. <br>
-                    
-                    -replace the multiple __ with the letter when plauyer got the right word. <br>
-                    
-                    -get the sound effect. <br>
-                    
-                    -deploy the website <br>
-                    
-                    -acess the object and array of food database <br>
-                    
-                    </p>
-                <button class="backtoprojectdiv">Back</button>
-            </div>
-
+          <h3 class="black">Bupa InsuranceServices Ltd.<br />(2016 - 2018)</h3>
+          <li class="black">- Installation</li>
+          <li class="black">- Update Software and Hardware Information</li>
+          <li class="black">
+            - Maintain and support service (Over 600 user)
+          </li>
         </div>
+        <div class="educationHistory">
+          <h2 class="black under top0">Education History</h2>
 
+          <h3 class="black">General Assembly D.C.</h3>
+          <li class="black">- Software Engineering Immersive</li>
+          <li class="black">- Graduated in 2019</li>
 
-
-
-        <div class="areaforheader scrollresumemain test"></div>
-        <div class="resumemain flexrow test">
-            <div class="insideresume insideresumeleft test">
-
-            </div>
-
-            <div class="insideresume insideresumeright test">
-
-            </div>
-            
-
-
-
+          <h3 class="black">
+            Teesside University HKIT <br />
+            Bachelor Degree of Computing
+          </h3>
+          <li class="black">- Computer Science</li>
+          <li class="black">- Study ITIL Mangement</li>
+          <li class="black">- Study Server Side Development</li>
+          <li class="black">- Graduated in 2019</li>
         </div>
+      </div>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-        <script src="script.js" async defer></script>
-    </body>
+    <script src="script.js" async defer></script>
+  </body>
 </html>
