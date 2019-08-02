@@ -44,6 +44,8 @@ document.querySelectorAll(".backtoprojectdiv").forEach(function(backbtn, i) {
   });
 });
 
+
+//The skill animation bar
 const bar1 = document.querySelector(".bar1");
 document.querySelector(".resumemain")
   .addEventListener("mouseenter", function() {
