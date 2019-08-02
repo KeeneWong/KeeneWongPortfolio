@@ -46,6 +46,7 @@ document.querySelectorAll(".backtoprojectdiv").forEach(function(backbtn, i) {
 
 
 //The skill animation bar
+
 const bar1 = document.querySelector(".bar1");
 document.querySelector(".resumemain")
   .addEventListener("mouseenter", function() {
@@ -85,3 +86,16 @@ document.querySelector(".resumemain")
       .addEventListener("mouseleave", function() {
         bar4.classList.remove("nodejs");
       });
+
+
+      //the icon jump
+
+      const icons = document.querySelectorAll('.icon');
+      icons.forEach(eachicon=>{
+        eachicon.addEventListener('mouseenter',function(){
+          eachicon.classList.add('bounce');
+          setTimeout(function() {
+            eachicon.classList.remove("bounce");
+          }, 300);
+        })
+      })

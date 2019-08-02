@@ -154,7 +154,7 @@ main h3:hover {
   background-color: none;
 }
 .projectpng {
-  width: 300px;
+  width: 20vw;
   height: 175px;
   border: 2px solid rgba(255, 255, 255, 0.363);
   border-radius: 5px;
@@ -320,7 +320,7 @@ main h3:hover {
 }
 
 .iconarea{
-  width: 25vw;
+  width: 400px;
   justify-content: space-around;
 }
 
@@ -353,14 +353,14 @@ main h3:hover {
 .bounce {
   display: inline-block;
   position: relative;
-  animation: bounce 1s linear;
+  animation: bounce 0.3s linear ;
   colr:000;
 }
 
 @keyframes bounce {
     0% { top: 0; }
-    50% { top: -0.2em; }
-    70% { top: -0.3em; }
+    50% { top: -0.6em; }
+    70% { top: -0.8em; }
     100% { top: 0; }
 }
 
