@@ -27,7 +27,7 @@ header {
   width: 100%;
   height: 7vh;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.24);
+  background-color: rgba(24, 24, 24, 0.733);
 }
 nav {
   justify-content: center;
@@ -75,10 +75,20 @@ p {
 }
 .sign {
   position: fixed;
-  left: 0;
-  top: 0;
+  left: 4vw;
+  top: 30px;
   width: 120px;
-  margin: 43px 60px;
+  /* margin: 43px 60px; */
+}
+.undersign{
+  position: fixed;
+  left: 4vw;
+  top: 87px;
+  font-family: 'Yellowtail', cursive;
+  background-color: rgba(0, 0, 0, 0.575);
+  border-radius: 5px;
+  padding: 3px;
+
 }
 .KeeneWong {
   border: 2px solid rgba(255, 255, 255, 0.445);
@@ -350,9 +360,11 @@ main h3:hover {
   background-size: cover;
 }
 
-.igicon{
-  background-image: url(./img/igicon.png);
+.meicon{
+  background-image: url(./img/medium.jpg);
+  border: 2px solid rgba(255, 255, 255, 0.404);
   background-size: cover;
+  border-radius: 40px;
 }
 
 .bounce {
@@ -360,6 +372,60 @@ main h3:hover {
   position: relative;
   animation: bounce 0.3s linear ;
   colr:000;
+}
+
+.dropbtn {
+  background-image: url("./img/menu.png");
+  background-color: rgb(182, 182, 182);
+  background-size: contain;
+  width: 43px;
+  height: 43px;
+  margin-right: 10px;
+  /* color: white; */
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  right: 0;
+  position: absolute;
+  background-color: #f9f9f9b7;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #f1f1f1c7;
 }
 
 @keyframes bounce {
@@ -370,10 +436,50 @@ main h3:hover {
 }
 
 @media only screen and (max-width: 800px) {
+  .sign {
+    left: 2vw;
+    top: 40px;
+    width: 80px;
+    /* margin: 43px 60px; */
+  }
+  .undersign{
+    left: 2vw;
+    top: 75px;
+    font-size: 7px;
+  }
 
   .resumemain {
     background-image: url("./img/ResumeStright.png");
   }
+}
+
+
+
+
+@media only screen and (max-width: 630px) {
+
+  .nav{
+    width: 100vw;
+    justify-content: flex-end;
+  }
+
+  .nav-baritem{
+    display: none;
+  }
+
+
+  .dropdown{
+    display: inline-block;
+  }
+
+  .navitem{
+    margin: 0px;
+    min-width: 50px;;
+  }
+
+
+
+
 }
 
 

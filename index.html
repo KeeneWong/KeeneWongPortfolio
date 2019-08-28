@@ -9,18 +9,31 @@
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet" />
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body class="flexcolumn">
   <header class="flexrow">
-    <nav class="flexrow">
-      <img class="sign" src="./img/sign.png" />
-      <a class="navitem" data-scroll="main">Main</a>
-      <a class="navitem" data-scroll="scrollprojectmain">Projct</a>
-      <a class="navitem" data-scroll="scrollresumemain">Resume</a>
-      <a class="navitem" data-scroll="scrollcontactmain">Contact</a>
+    <div class="signdiv"><img class="sign" src="./img/sign.png" />
+      <p class="undersign">Full-Stack Software Developer</p>
+    </div>
+    <nav class="nav flexrow">
+      <a class="navitem nav-baritem" data-scroll="main">Main</a>
+      <a class="navitem nav-baritem" data-scroll="scrollprojectmain">Projct</a>
+      <a class="navitem nav-baritem" data-scroll="scrollresumemain">Resume</a>
+      <a class="navitem nav-baritem" data-scroll="scrollcontactmain">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn"></button>
+        <div class="dropdown-content">
+          <a class="navitem" data-scroll="main">Main</a>
+          <a class="navitem" data-scroll="scrollprojectmain">Projct</a>
+          <a class="navitem" data-scroll="scrollresumemain">Resume</a>
+          <a class="navitem" data-scroll="scrollcontactmain">Contact</a>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -28,10 +41,9 @@
     <h2>Hello My Name Is</h2>
     <h1 class="KeeneWong">Keene Wong</h1>
     <p>
-      hello Creative software engineer with a degree in computer science<br />
-      Enjoy group working environment and able to work individually<br />
-      A fan of learning new tech stuff and positive, critical and logical
-      thinking
+      Fast learning and creative full-stack software developer.<br>
+      A fan of positive and logical thinking.<br>
+      Never satisfied with the code I have.
     </p>
   </main>
 
@@ -57,11 +69,13 @@
       <h3>Tic Tac Toe</h3>
       <p>First JavaScript game that I created</p>
     </div>
+
     <div class="projectsdiv projectdiv4" data-expand="projectdiv4Expand">
       <img src="./img/soccerapi.png" class="projectpng" />
       <h3>SoccerAPI</h3>
       <p>a simply API for developer to get data</p>
     </div>
+
     <div class="projectsdiv projectdiv5" data-expand="projectdiv5Expand"></div>
     <div class="projectsdiv projectdiv6" data-expand="projectdiv6Expand"></div>
   </div>
@@ -256,10 +270,18 @@
   <div class="contactmain flexcolumn">
     <h1>Contact</h1>
     <div class="iconarea flexrow ">
-      <div class="icon githubicon"></div>
-      <div class="icon linkdinicon"></div>
-      <div class="icon gmailicon"></div>
-      <div class="icon igicon"></div>
+      <a href="https://github.com/KeeneWong">
+        <div class="icon githubicon"></div>
+      </a>
+      <a href="https://www.linkedin.com/in/keene-wong-505256187/">
+        <div class="icon linkdinicon"></div>
+      </a>
+      <a href="http://google.com">
+        <div class="icon gmailicon"></div>
+      </a>
+      <a href="https://medium.com/@keenewonghofung">
+        <div class="icon meicon"></div>
+      </a>
     </div>
 
 
