@@ -1,6 +1,53 @@
 const navitem = document.querySelectorAll(".navitem");
 const getprojectsdiv = document.querySelectorAll(".projectsdiv");
 
+
+let projectdb = [
+
+  {
+    title: "CookingPaPa",
+    short: "a simply game with logic of hangman",
+    img: "./img/cookingpapa.png",
+    long: `Have you ever play hangman~
+
+    If you are a fan of hangman, don't miss cooking papa !!
+    
+    Cooking PaPa is a word gussing game for both single and multiplayer
+    
+    It's a story of a kind PaPa trying to cook for his son
+    
+    What are you waiting for, come and try it out !
+    
+    Programming Skills used in this project:
+    
+    Javascript CSS HTML5
+    
+    User Stories
+
+    This is my first project in GA. The idea of this game was came from hangman. 
+
+    However I do not want to create a game that everyone has been created. 
+    
+    Therefore I change the theme of it and try to implement a interesting story to the game :)`,
+
+    link: "https://github.com/KeeneWong/cookingpapa"
+  },
+  {
+    title: "Tic Tac Toe",
+    short: "First JavaScript game that I created",
+    img: "./img/tictactoe.png"
+  },
+  {
+    title: "SoccerAPI",
+    short: "a simply API for developer to get data",
+    img: "./img/soccerapi.png"
+  }
+
+]
+
+
+
+
 //Nav Bar Button and auto scroll to section
 navitem.forEach(item => {
   item.addEventListener("click", function () {
@@ -29,6 +76,59 @@ getprojectsdiv.forEach(function (div, i) {
   });
 });
 
+
+//the icon jump
+
+const icons = document.querySelectorAll('.icon');
+icons.forEach(eachicon => {
+  eachicon.addEventListener('mouseenter', function () {
+    eachicon.classList.add('bounce');
+    setTimeout(function () {
+      eachicon.classList.remove("bounce");
+    }, 300);
+  })
+})
+
+//the project main display setting
+//and also the expand project div
+
+const projectsdivs = document.querySelectorAll(".projectsdiv");
+const insideprojectdivExpandlefts = document.querySelectorAll(".insideprojectdivExpandleft");
+const insideprojectdivExpandrights = document.querySelectorAll(".insideprojectdivExpandright");
+
+
+projectdb.forEach((each, i) => {
+  let title = document.createElement("h3");
+  let short = document.createElement("p");
+  let long = document.createElement("p");
+  let link = document.createElement("a");
+  let button = document.createElement("button");
+  // let img = document.createElement("div");
+  title.innerText = each.title;
+  short.innerText = each.short;
+  long.innerText = each.long;
+  link.innerText = each.link;
+  link.setAttribute("href", each.link)
+  button.classList.add("backtoprojectdiv");
+  button.innerText = "Back";
+
+
+  // projectsdivs[i].appendChild(img);
+  projectsdivs[i].appendChild(title);
+  projectsdivs[i].appendChild(short);
+
+
+  insideprojectdivExpandrights[i].appendChild(title);
+  insideprojectdivExpandrights[i].appendChild(link);
+  insideprojectdivExpandrights[i].appendChild(long);
+  insideprojectdivExpandrights[i].appendChild(button);
+
+
+
+
+})
+
+
 //BacktoProjectDiv button
 document.querySelectorAll(".backtoprojectdiv").forEach(function (backbtn, i) {
   backbtn.addEventListener("click", function () {
@@ -43,6 +143,20 @@ document.querySelectorAll(".backtoprojectdiv").forEach(function (backbtn, i) {
     }, 500);
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //The skill animation bar
@@ -86,16 +200,3 @@ document.querySelectorAll(".backtoprojectdiv").forEach(function (backbtn, i) {
 //       .addEventListener("mouseleave", function() {
 //         bar4.classList.remove("nodejs");
 //       });
-
-
-//the icon jump
-
-const icons = document.querySelectorAll('.icon');
-icons.forEach(eachicon => {
-  eachicon.addEventListener('mouseenter', function () {
-    eachicon.classList.add('bounce');
-    setTimeout(function () {
-      eachicon.classList.remove("bounce");
-    }, 300);
-  })
-})
