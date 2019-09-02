@@ -35,13 +35,44 @@ let projectdb = [
   {
     title: "Tic Tac Toe",
     short: "First JavaScript game that I created",
-    img: "./img/tictactoe.png"
+    img: "./img/tictactoe.png",
+    long: `
+    It is my first game created by JavaScript 
+    
+    Auctually the logic is the same. `,
+    link: " https://git.generalassemb.ly/keenewong/tic-tac-toe "
   },
   {
     title: "SoccerAPI",
-    short: "a simply API for developer to get data",
-    img: "./img/soccerapi.png"
+    short: "a simple API for developer to get data",
+    img: "./img/soccerapi.png",
+    long: `This API is called soccer api.
+
+    It's a API developed for software developer who want to use soccer teams information.
+    
+    it's like a database of football team and league.
+    
+    Just use the endpoint and grab my data.`,
+    link: "https://github.com/KeeneWong/SoccerAPI"
+  },
+  {
+    title: "Animeme",
+    short: "My first Full-Stack application",
+    img: "./img/animeme.png",
+    long: `This website is a database of anime and users. the users will be able to create lists of their 
+    favorites as well as what anime they are currently watching.
+
+    Prerequisites
+    node.js
+    Installing
+    fork and clone this repo
+    
+    cd to animeme directory
+    
+    run npm install`,
+    link: "https://github.com/KeeneWong/Animeme"
   }
+
 
 ]
 
@@ -122,6 +153,8 @@ projectdb.forEach((each, i) => {
   insideprojectdivExpandrights[i].appendChild(link);
   insideprojectdivExpandrights[i].appendChild(long);
   insideprojectdivExpandrights[i].appendChild(button);
+
+  insideprojectdivExpandlefts[i].style.backgroundImage = `url(${projectdb[i].img})`;
 
 
 
