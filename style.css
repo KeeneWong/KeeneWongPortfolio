@@ -14,12 +14,14 @@ li {
   padding: 0px;
   /* color: rgba(0, 0, 0, 0.747); */
 }
+
 body {
   background-color: rgb(18, 18, 32);
   justify-content: center;
   align-items: center;
   /* height: 700px; */
 }
+
 header {
   position: fixed;
   top: 0;
@@ -271,7 +273,7 @@ main h3:hover {
   height: 93vh;
   width: 100%;
   justify-content: center;
-  background-image: url("./img/ResumeWidth2.png");
+  background-image: url("./img/ResumeWidth.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
