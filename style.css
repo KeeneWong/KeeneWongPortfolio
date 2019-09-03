@@ -198,10 +198,16 @@ main h3:hover {
   text-align: left;
 }
 .backtoprojectdiv {
-  color: black;
-  background-color: rgba(240, 248, 255, 0.644);
+  color: rgb(250, 250, 250);
+  background-color: rgba(37, 37, 37, 0.644);
+  border: 1px solid rgba(255, 255, 255, 0.459);
+  border-radius: 5px;
   height: 30px;
   font-size: 15px;
+}
+
+.backtoprojectdiv:hover{
+  background-color:  rgba(119, 119, 119, 0.644);
 }
 
 .projectdiv2{
@@ -265,6 +271,15 @@ main h3:hover {
 
 .insideprojectdivExpandright{
   padding: 30px;
+}
+
+.projectllong{
+  height: 40vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.432);
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px;
 }
 
 /* resume page --------------------------------------------------------------------------------------------- */
@@ -546,6 +561,36 @@ main h3:hover {
     min-width: 50px;;
   }
 
+  .projectmain{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .projectsdiv1 h1{
+    font-size: 17px;
+  }
+  .projectsdiv1 p{
+    width: 170px;
+    font-size: 12px;
+  }
+
+  .projectsdiv p{
+    font-size: 12px;
+  }
+.projectdivExpand{
+  flex-direction: column;
+}
+
+.insideprojectdiv{
+  width: 80vw;
+}
+.insideprojectdivExpandleft{
+  background-position: bottom;
+}
+
+.iconarea{
+  width: 300px;
+}
 
 
 

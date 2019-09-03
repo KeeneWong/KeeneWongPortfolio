@@ -131,7 +131,7 @@ const insideprojectdivExpandrights = document.querySelectorAll(".insideprojectdi
 projectdb.forEach((each, i) => {
   let title = document.createElement("h3");
   let short = document.createElement("p");
-  let long = document.createElement("p");
+  let long = document.createElement("div");
   let link = document.createElement("a");
   let button = document.createElement("button");
   // let img = document.createElement("div");
@@ -141,6 +141,7 @@ projectdb.forEach((each, i) => {
   link.innerText = each.link;
   link.setAttribute("href", each.link)
   button.classList.add("backtoprojectdiv");
+  long.classList.add("projectllong");
   button.innerText = "Back";
 
 
