@@ -71,6 +71,29 @@ let projectdb = [
     
     run npm install`,
     link: "https://github.com/KeeneWong/Animeme"
+  },
+  {
+    title: "SmartInv",
+    short: "A Full-Stack Application that use Django Backend and React as Frontend",
+    img: "./img/smartinv.png",
+    long: `This is my first web application that use Python as backend.
+
+    I came through a lot of auth problem and error in this project
+
+    This project remind me how powerful is Python and Django.
+
+    It also let me getting much practice on React.
+    
+    Language and skills used:
+    
+    JS 
+    Python
+    React
+    Django
+    Django Rest Framwork
+    Rest Framwork Token`,
+
+    link: "http://smartinv.surge.sh"
   }
 
 
