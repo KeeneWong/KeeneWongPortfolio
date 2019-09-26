@@ -284,6 +284,7 @@ main h3:hover {
 
 .insideprojectdivExpandright{
   padding: 30px;
+  /* width: 40vw; */
 }
 
 .projectllong{
@@ -293,6 +294,7 @@ main h3:hover {
   border-radius: 10px;
   padding: 30px;
   margin: 20px;
+  width: 35vw;
 }
 
 /* resume page --------------------------------------------------------------------------------------------- */
@@ -373,56 +375,6 @@ main h3:hover {
 
 .top0 {
   margin-top: 0px;
-}
-
-.javascript {
-  width: 90%;
-  animation: javascript 1.5s;
-}
-.htmlcss {
-  width: 70%;
-  animation: htmlcss 1.5s;
-}
-.csharp {
-  width: 50%;
-  animation: csharp 1.5s;
-}
-.nodejs {
-  width: 80%;
-  animation: nodejs 1.5s;
-}
-
-@keyframes javascript {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 90%;
-  }
-}
-@keyframes htmlcss {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-@keyframes csharp {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 50%;
-  }
-}
-@keyframes nodejs {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 80%;
-  }
 }
 
 /* //contact page----------------------------------------------------------- */
@@ -525,6 +477,65 @@ main h3:hover {
   background-color: #f1f1f1c7;
 }
 
+
+
+/* About me page=================================== */
+.aboutmemain {
+  /* height:  */
+  min-height: 93vh;;
+  width: 100%;
+  justify-content: space-around;
+  display: grid;
+  grid-template-rows: 5fr 6fr;
+  grid-template-columns: 1fr;
+}
+
+.headshot{
+  width: 180px;
+  height: 180px;
+  background-color: #bbb;
+  border-radius: 50%;
+  background-image: url(./img/headshot.png);
+  background-position: center;
+  background-size: cover;
+  border: 1px solid rgba(255, 255, 255, 0.246);
+}
+
+.question{
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.answer{
+  /* border: 1px solid white;
+  border-radius: 10px; */
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+  height: 35vh;
+}
+
+.answer h4{
+  text-align: center;
+}
+
+.answer p{
+  text-align: left;
+}
+
+.qanda{
+  padding: 20px;
+}
+
+/* .aboutmetop{
+  margin-bottom: 30px;
+} */
+
+
+
+
 @keyframes bounce {
     0% { top: 0; }
     50% { top: -0.6em; }
@@ -603,6 +614,10 @@ main h3:hover {
 
 .iconarea{
   width: 300px;
+}
+
+.projectllong{
+  width: 70vw;
 }
 
 
