@@ -74,7 +74,8 @@ let projectdb = [
   },
   {
     title: "SmartInv",
-    short: "A Full-Stack Application that use Django Backend and React as Frontend",
+    short: `A Full-Stack Application that use 
+    Django Backend and React as Frontend`,
     img: "./img/smartinv.png",
     long: `This is my first web application that use Python as backend.
 
