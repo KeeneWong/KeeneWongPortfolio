@@ -423,6 +423,18 @@ main h3:hover {
   colr:000;
 }
 
+#moreaboutbtn{
+  background: rgba(138, 138, 138, 0.144);
+  padding: 5px;
+  border-radius: 5px;
+  /* margin: 0px; */
+}
+
+#moreaboutbtn:hover{
+  /* background: rgba(138, 138, 138, 0.466); */
+  box-shadow: 0px 0px 8px 7px #8888889d;
+}
+
 .dropbtn {
   background-image: url("./img/menu.png");
   background-color: rgb(182, 182, 182);
@@ -481,13 +493,12 @@ main h3:hover {
 
 /* About me page=================================== */
 .aboutmemain {
-  /* height:  */
   min-height: 93vh;;
   width: 100%;
-  justify-content: space-around;
-  display: grid;
-  grid-template-rows: 5fr 6fr;
-  grid-template-columns: 1fr;
+}
+
+.aboutmetop{
+  margin-top: 20px;
 }
 
 .headshot{
@@ -508,13 +519,7 @@ main h3:hover {
 }
 
 .answer{
-  /* border: 1px solid white;
-  border-radius: 10px; */
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 10px;
-  height: 35vh;
+ width: 70vw;
 }
 
 .answer h4{
@@ -522,11 +527,13 @@ main h3:hover {
 }
 
 .answer p{
-  text-align: left;
+  /* text-align: left; */
+  text-align: justify;
 }
 
 .qanda{
   padding: 20px;
+  width: 70vw;
 }
 
 /* .aboutmetop{

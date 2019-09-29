@@ -201,6 +201,16 @@ document.querySelectorAll(".backtoprojectdiv").forEach(function (backbtn, i) {
   });
 });
 
+//More About Me button
+
+document.querySelector("#moreaboutbtn").addEventListener("click", function () {
+  document.querySelector(".aboutmemain").classList.remove('hidden');
+  document.querySelector(".scrollaboutmain").classList.remove('hidden');
+  document
+    .querySelector(".scrollaboutmain")
+    .scrollIntoView({ behavior: "smooth" });
+})
+
 
 
 
