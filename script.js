@@ -33,14 +33,25 @@ let projectdb = [
     link: "https://github.com/KeeneWong/cookingpapa"
   },
   {
-    title: "Tic Tac Toe",
-    short: "First JavaScript game that I created",
-    img: "./img/tictactoe.png",
+    title: "LOL Team Builder",
+    short: "A team builder for league user",
+    img: "./img/lolteambuilder.png",
     long: `
-    It is my first game created by JavaScript 
+    This is web application that allow user to create their own team combination.
+
+    User can also view the information of each champion in game.
     
-    Auctually the logic is the same. `,
-    link: " https://git.generalassemb.ly/keenewong/tic-tac-toe "
+    This website was built by React as Frontend and MongoDb as Backend.
+
+    This project was built in group with my GA classmate Maj.
+
+    
+
+    
+
+    
+        `,
+    link: " https://lolbuilder.netlify.com/ "
   },
   {
     title: "SoccerAPI",
